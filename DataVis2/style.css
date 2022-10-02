@@ -37,10 +37,10 @@ body{
    margin-top: 20px;
    margin-left: 100px;
    margin-right: 100px;
+   width: 80%;
 }
 .map-child {
    width: 50%;
-   float: left;
    padding: 20px;
    border:2px solid red;
 }
