@@ -1,9 +1,16 @@
-h1{
-    text-align: center;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
+ .map_visual{
+   display : block;
+   border: 4px solid black;
  }
- body{
-    background-color: antiquewhite;
+ .Bubble_visual{
+   display : block;
+   border: 4px solid black;
+ }
+ .donut_visual{
+   display : block;
+   border: 4px solid black;
+ }
+ .WorldCloud_visual{
+   display : block;
+   border: 4px solid black;
  }
