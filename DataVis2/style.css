@@ -9,11 +9,8 @@ body{
 }
 .map-container {
    margin-top: 20px;
-   margin-left: 100px;
-   margin-right: 100px;
-   position: fixed;
-   width : 800;
-   height : 450;   
+   border: 4px solid black;
+   padding: 20px;   
 }
 .map_visual{
   border: 4px solid red;
