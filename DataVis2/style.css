@@ -9,31 +9,85 @@ body{
 }
 .map-container {
    margin-top: 20px;
+   margin-left: 150px;
+   display: block;
+   width: 80%;
+   height: 550px;
    border: 4px solid black;
-   padding: 20px;
-   width : 1600;
-   height: 900;  
+   padding: 20px; 
 }
 .map_visual{
   border: 4px solid red;
   padding: 20px;
   float: left;   
 }
+.map_text{
+   border: 4px solid red;
+   padding: 20px;
+   margin-left: 1000px;
+   width: 30%;
+   margin-top: 0px;   
+ }
+ .Bubble-container {
+   margin-top: 20px;
+   margin-left: 150px;
+   display: block;
+   width: 80%;
+   height: 650px;
+   border: 4px solid black;
+   padding: 20px; 
+}
+.Bubble_text{
+   border: 4px solid red;
+   padding: 20px;
+   margin-left: 1000px;
+   width: 30%;
+   margin-top: 0px;   
+ }
 .Bubble_visual{
-  display : block;
-  border: 4px solid black;
-  width : 600;
-  height : 500
+   border: 4px solid red;
+   padding: 20px;
+   float: left; 
+}
+.donut-container {
+   margin-top: 20px;
+   margin-left: 150px;
+   display: block;
+   width: 80%;
+   height: 600px;
+   border: 4px solid black;
+   padding: 20px; 
 }
 .donut_visual{
-  display : block;
-  border: 4px solid black;
-  width : 400;
-  height : 400;
+   border: 4px solid red;
+   padding: 20px;
+   float: left;   
+}
+.donut_text{
+   border: 4px solid red;
+   padding: 20px;
+   margin-left: 1000px;
+   width: 30%;
+   margin-top: 0px;   
+ }
+ .WorldCloud-container {
+   margin-top: 20px;
+   margin-left: 150px;
+   display: block;
+   width: 80%;
+   height: 450px;
+   border: 4px solid black;
+   padding: 20px; 
 }
 .WorldCloud_visual{
-  display : block;
-  border: 4px solid black;
-  width : 800;
-  height : 400;
+   border: 4px solid red;
+   padding: 20px;
+   float: left; 
 }
+.WorldCloud_text{
+   border: 4px solid red;
+   padding: 20px;
+   margin-left: 1000px;
+   width: 30%;
+   margin-top: 0px;   
+ }
