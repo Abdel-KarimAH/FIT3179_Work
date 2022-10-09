@@ -4,7 +4,7 @@
     "height": 500,
     "title": "Sum of Fatalities by Operator Overtime",
     "data": {
-    "url": "https://raw.githubusercontent.com/Abdel-KarimAH/FIT3179_Work/main/DataVis2/countOfFatalitiesByOperator.csv"
+    "url": "https://raw.githubusercontent.com/Abdel-KarimAH/FIT3179_Work/main/HWWeek10/countOfFatalitiesByOperator.csv"
     },
     "params": [
         {"name": "Fatalities_Above",
