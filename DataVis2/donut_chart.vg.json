@@ -35,25 +35,26 @@
       {
         "name": "table",
         "values":[
-            {"Operator": "Aeroflot", "Value" : 254},
-            {"Operator": "Military - U.S. Air Force", "Value" :	141},
+            {"Operator": "Aeroflot", "Value" : 263},
             {"Operator": "Air France", "Value" : 71},
             {"Operator": "Deutsche Lufthansa", "Value" :62},
             {"Operator": "United Air Lines"	, "Value" :44},
-            {"Operator": "Military - U.S. Army Air Forces", "Value" :	43},
             {"Operator": "China National Aviation Corporation", "Value" :	42},
             {"Operator": "Pan American World Airways", "Value" :	41},
             {"Operator": "American Airlines", "Value" :	37},
-            {"Operator": "US Aerial Mail Service", "Value" :	35},
             {"Operator": "Indian Airlines", "Value" :	34},
             {"Operator": "KLM Royal Dutch Airlines", "Value" :	34},
             {"Operator": "Philippine Air Lines", "Value" :	33},
-            {"Operator": "Military - Royal Air Force", "Value" :32},
-            {"Operator": "Private", "Value" :	31},
             {"Operator": "British Overseas Airways", "Value" :	29},
-            {"Operator": "Military - U.S. Navy", "Value" :	28},
             {"Operator": "Avianca", "Value" :	27},
-            {"Operator": "Military - U.S. Army", "Value" :	27}
+            {"Operator": "Eastern Airlines", "Value" :	25},
+            {"Operator": "Northwest Orient Airlines", "Value" :	25},
+            {"Operator": "Sabena", "Value" :	24},
+            {"Operator": "Imperial Airways", "Value" :	23},
+            {"Operator": "Avianca", "Value" :	27},
+            {"Operator": "British European Airways", "Value" :	19},
+            {"Operator": "Garuda Indonesia Airlines", "Value" :	18},
+            {"Operator": "Merpati Nusantara Airlines", "Value" :	18}
         ],
         "transform": [
           {
