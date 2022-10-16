@@ -29,32 +29,32 @@ body {
    background-color: antiquewhite;
 }
 .vis1-annot1{
-   position: absolute;
-   top: 320px;
+   position: relative;
+   top: -390px;
    margin-left: 420px;
    font-size: 10px;
 }
 .vis1-annot2{
-   position: absolute;
-   top: 270px;
+   position: relative;
+   top: -450px;
    margin-left: 50px;
    font-size: 10px;
 }
 .vis1-annot3{
-   position: absolute;
-   top: 420px;
+   position: relative;
+   top: -350px;
    margin-left: 400px;
    font-size: 10px;
 }
 .vis2-annot1{
-   position: absolute;
-   top: 900px;
+   position: relative;
+   top: -250px;
    margin-left: 420px;
    font-size: 10px;
 }
 .vis2-annot2{
-   position: absolute;
-   top: 1000px;
+   position: relative;
+   top: -200px;
    margin-left: 260px;
    font-size: 10px;
 }
