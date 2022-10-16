@@ -1,0 +1,59 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {"url": "https://raw.githubusercontent.com/Abdel-KarimAH/FIT3179_Work/main/DataVis2/countOfFatalitiesByOperator.csv"},
+    "hconcat": [{
+    "width": 525,
+    "height": 300,
+      "mark": "bar",
+      "transform": [{
+        "filter": {"param": "brush"}
+      }],
+      "encoding": {
+        "color": {
+        "field": "Continent",
+        "type": "nominal"
+        },  
+        "y": {
+          "field": "Continent",
+          "type": "nominal",
+          "axis": {"minExtent": 0, "title": null},
+          "sort": "-x"
+        },
+        "x": {
+          "field": "Total Fatalities",
+          "type": "quantitative",
+          "scale":{"domain":  [0, 18000]},
+          "axis": {"orient": "top"}
+        },
+      "tooltip": [
+          {"field": "Operator", "type": "nominal"},
+          {"field": "Continent", "type": "nominal"},
+          {"field": "Total Fatalities", "type": "quantitative", "format": ","},
+          {"field": "Total Aboard", "type": "quantitative", "format": ","},
+          {"field": "%ofFatalities", "type": "quantitative", "format": ".2f"}]  
+      }
+    }, {
+      "height": 200,
+      "width": 50,
+      "params": [{
+        "name": "brush",
+        "select": {
+          "type": "interval",
+          "encodings": ["y"]
+        }
+      }],
+      "mark": "bar",
+      "encoding": {
+        "y": {
+          "field": "Continent",
+          "type": "nominal",
+          "sort": "-x",
+          "axis": null
+        },
+        "x": {
+          "field": "Total Fatalities",
+          "type": "quantitative"
+        }
+      }
+    }]
+  }

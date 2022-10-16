@@ -1,0 +1,60 @@
+.vis-container {
+   width: 100%;
+}
+h1 {
+   text-align: center;
+   color: black;
+   font-family: 'Times New Roman', Times, serifs;
+   font-weight: bold;
+   background: lightgray;
+}
+h2 {
+   text-align: center;
+   color: black;
+   font-size: 25px;
+   font-family: 'Times New Roman', Times, serifs;
+   background: lightgray;
+}
+.hr3 {
+   border: 0;
+   height: 2px;
+   background-image: linear-gradient(to right, transparent, #DDD, transparent);
+   padding-top: 5px;
+}
+.pure-g{
+   margin-left: 10px;
+   margin-right: 10px;
+}
+body {
+   background-color: antiquewhite;
+}
+.vis1-annot1{
+   position: relative;
+   top: -390px;
+   margin-left: 420px;
+   font-size: 10px;
+}
+.vis1-annot2{
+   position: relative;
+   top: -450px;
+   margin-left: 50px;
+   font-size: 10px;
+}
+.vis1-annot3{
+   position: relative;
+   top: -350px;
+   margin-left: 400px;
+   font-size: 10px;
+}
+.vis2-annot1{
+   position: relative;
+   top: -250px;
+   margin-left: 420px;
+   font-size: 10px;
+}
+.vis2-annot2{
+   position: relative;
+   top: -200px;
+   margin-left: 260px;
+   font-size: 10px;
+}

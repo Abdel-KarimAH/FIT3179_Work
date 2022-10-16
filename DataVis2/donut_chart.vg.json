@@ -1,0 +1,106 @@
+ {
+    "$schema": "https://vega.github.io/schema/vega/v5.json",
+    "width": 350,
+    "height": 350,
+    "autosize": "none",
+
+    "signals": [
+      {
+        "name": "startAngle", "value": 0,
+        "bind": {"input": "range", "min": 0, "max": 6.29, "step": 0.01}
+      },
+      {
+        "name": "endAngle", "value": 6.29,
+        "bind": {"input": "range", "min": 0, "max": 6.29, "step": 0.01}
+      },
+      {
+        "name": "padAngle", "value": 0,
+        "bind": {"input": "range", "min": 0, "max": 0.1}
+      },
+      {
+        "name": "innerRadius", "value": 90,
+        "bind": {"input": "range", "min": 0, "max": 120, "step": 1}
+      },
+      {
+        "name": "cornerRadius", "value": 0,
+        "bind": {"input": "range", "min": 0, "max": 10, "step": 0.5}
+      },
+      {
+        "name": "sort", "value": false,
+        "bind": {"input": "checkbox"}
+      }
+    ],
+  
+    "data": [
+      {
+        "name": "table",
+        "values":[
+            {"Operator": "Aeroflot", "Value" : 263},
+            {"Operator": "Air France", "Value" : 71},
+            {"Operator": "Deutsche Lufthansa", "Value" :62},
+            {"Operator": "United Air Lines"	, "Value" :44},
+            {"Operator": "China National Aviation Corporation", "Value" :	42},
+            {"Operator": "Pan American World Airways", "Value" :	41},
+            {"Operator": "American Airlines", "Value" :	37},
+            {"Operator": "Indian Airlines", "Value" :	34},
+            {"Operator": "KLM Royal Dutch Airlines", "Value" :	34},
+            {"Operator": "Philippine Air Lines", "Value" :	33},
+            {"Operator": "British Overseas Airways", "Value" :	29},
+            {"Operator": "Avianca", "Value" :	27},
+            {"Operator": "Eastern Airlines", "Value" :	25},
+            {"Operator": "Northwest Orient Airlines", "Value" :	25},
+            {"Operator": "Sabena", "Value" :	24},
+            {"Operator": "Imperial Airways", "Value" :	23},
+            {"Operator": "Avianca", "Value" :	27},
+            {"Operator": "British European Airways", "Value" :	19},
+            {"Operator": "Garuda Indonesia Airlines", "Value" :	18},
+            {"Operator": "Merpati Nusantara Airlines", "Value" :	18}
+        ],
+        "transform": [
+          {
+            "type": "pie",
+            "field": "Value",
+            "startAngle": {"signal": "startAngle"},
+            "endAngle": {"signal": "endAngle"},
+            "sort": {"signal": "sort"}
+          }
+        ]
+      }
+    ],
+  
+    "scales": [
+      {
+        "name": "color",
+        "type": "ordinal",
+        "domain": {"data": "table", "field": "Operator"},
+        "range": {"scheme": "category20"}
+      }
+    ],
+  
+    "marks": [
+      {
+        "type": "arc",
+        "from": {"data": "table"},
+        "encode": {
+          "enter": {
+            "fill": {"scale": "color", "field": "Operator"},
+            "x": {"signal": "width / 2"},
+            "y": {"signal": "height / 2"},
+            "tooltip": {"signal": "{'Operator': datum.Operator, 'Count': datum.Value}"}
+          },
+          "update": {
+            "startAngle": {"field": "startAngle"},
+            "endAngle": {"field": "endAngle"},
+            "padAngle": {"signal": "padAngle"},
+            "innerRadius": {"signal": "innerRadius"},
+            "outerRadius": {"signal": "width / 2"},
+            "cornerRadius": {"signal": "cornerRadius"}
+          }
+        }
+      }
+    ],
+    "encoding": {
+        "theta": {"field": "Value", "type": "quantitative"},
+        "color": {"field": "Operator", "type": "nominal"}
+      }
+  }

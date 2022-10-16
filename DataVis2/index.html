@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Import pure.css -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Co   mpatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.4.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.0"></script>
+    <script src="vega_lite_vis.js"></script>
+        
+    <title>Data Visualisation 2 Assignment </title>
+</head>
+    <body>
+        <h1 style="font-size: 50px;">Should you Fear the Operator or Country ?</h1>
+        <hr class="hr3">
+            <h2>Locations of Plane Crashes in Differnet Countries from 1908-2020</h2>
+            <div class="pure-g">
+                <div class="pure-u-1-4" style="font-size: 20px;font-family: 'Times New Roman', Times, serifs;">    
+                    The map idiom to the right is a representation of all crashes that occurred in the time period from 1908-2020. The crashes represented are associated to the country in which it occurred and not the airlines parent company. This helps us look at the number of crashes in the different countries and areas around the world to help us understand whether some areas would be considered more dangerous to fly over or near to. A point that needs to be taken into consideration is that some areas around the world consist of more flights per day than others. Additionally, not all continents have the same number of countries which explains why the total number of crashes in a continent may be significantly larger than others.
+                </div>
+                <div class="pure-u-1-2">        
+                    <div id="map_visual" class="vis-container"></div>
+                    <h3 class="vis1-annot1">The U.S has the most crashes <br>with 1025 crashes</h3>
+                    <h3 class="vis1-annot2">Europe has a large concentration <br>of crashes</h3>
+                    <h3 class="vis1-annot3">Surprisingly a small number of <br>crashes were near the equator</h3>                    
+                </div>
+                <div class="pure-u-1-4" style="font-size: 20px;font-family: 'Times New Roman', Times, serifs;">    
+                    We can see from the idiom that the circles plotted are bigger as the number of crashes increase. Based on that, we can view from the map that the US, Russia and some countries in South America represented the countries with the largest % of crashes that took place in the period spanning 1908-2020. That could be for many reasons, either weather conditions in the northern region of Asia or even heavy traffic in the airspace associated of that country. This is obvious since there are hundreds of flights every single day in America itself excluding any international flights that occur.
+                </div>
+            </div>
+            <hr class="hr3">
+
+            <h2>Top 50 Operators by Fatalities Grouped by Region</h2>
+            <div class="pure-g">
+                <div class="pure-u-1-4" style="font-size: 20px;font-family: 'Times New Roman', Times, serifs;">
+                    As we have explored location/countries in terms of association to the number of crashes, we now move onto operators. What if the flaw is within the operator and not the country? This is why we focus in this idiom on the number fatalities for the top 50 operators with fatalities. For the purpose of this visual, the operators are grouped by the continent based on their parent country. We can further explore the continents or a selected group by using the mini chart to the side to brush over sub sections of the chart.
+                </div>
+                <div class="pure-u-1-2">
+                    <div id="Bubble_visual" class="vis-container"></div>
+                    <h3 class="vis2-annot1">Asia has the highest fatalities <br>eventhough the USA has the<br>highest number of crashes</h3>
+                    <h3 class="vis2-annot2">Africa has the least <br>number of fatalities <br>due to less flights</h3>
+                </div>
+                <div class="pure-u-1-4" style="font-size: 20px;font-family: 'Times New Roman', Times, serifs;">
+                    We can see that operators amongst the top 50 operators with fatalities are mostly from the Asian continent. Strange? Maybe. If we look at the bigger picture, the US has more restrictions and emphasis on safety compared to third world countries as present in Asia, this could tell us that flight safety is important for the US which is why the Northern America continent has half the number of fatalities as Asia. Moreover, Asia is a larger continent than North America, which explains why it has more fatalities due to more operators in the region because of the larger number of countries in the continent. 
+                </div>
+                
+            </div>
+
+            <hr class="hr3">
+
+            <h2>Distribution of The Top 20 Operator Crashes</h2>
+            <div class="pure-g">
+                <div class="pure-u-1-4" style="font-size: 20px;font-family: 'Times New Roman', Times, serifs;">    
+                    Previously we explored the fatalities based on the different operators, for this donut chart we instead look at the distribution of operators based on the number of crashes. For this case, we come to a different conclusion based on the distribution seen, which is that most of these operators amongst the top 20 with crashes are either Asian or European based operators. But we can again argue that Europe and Asia consist of a larger number of operators and countries than the Americas, which explains why more crashes are bound to occur in those regions than elsewhere. 
+                </div>
+                <div class="pure-u-1-2">        
+                    <div id="donut_visual" class="vis-container" style="margin-left: 200px;"></div>
+                </div>
+                <div class="pure-u-1-4" style="font-size: 20px;font-family: 'Times New Roman', Times, serifs;">    
+                    The signals/customizable options shown under the donut chart allow us to alter the display of the donut chart by sliding or selecting across the range of values displayed. We can use this to alter the radius of the donut chart, angles of distributions, cornering the radius or even sorting the donut chart based on the number of crashes for the different operators from largest to smallest.
+                </div>
+            </div>
+            <hr class="hr3">
+
+            <h2>Keywords Associated With A Crash</h2>
+            <div class="pure-g">
+                <div class="pure-u-1-4" style="font-size: 20px;font-family: 'Times New Roman', Times, serifs;">    
+                    The dataset used to build this web page consisted of a summary column that contained sentences for every crash. The text in the data represented either communication or conversations that occurred between pilots during the flight. It could also include information that was extracted from the black box of the plane which has information on every action the pilots took and readings of different sensors. This idiom helps us identify any common theme between crashes that occurred from 1908-2020 and identify the main causes of these crashes based on the number of time a word from the summary appeared in the dataset.
+                </div>
+                <div class="pure-u-1-2">        
+                    <div id="WorldCloud_visual" class="vis-container"></div>
+                </div>
+                <div class="pure-u-1-4" style="font-size: 20px;font-family: 'Times New Roman', Times, serifs;">    
+                    Based on the world cloud idiom, the larger the word displayed is, the more repeated it was in the data. By looking at the idiom, we see that the more relevant and most repeated words include aircraft, landing, control, weather, engine and fuel. The common theme that we see between most these words is that they relate to the aircraft itself and not a country or flight operator. This is not strange, as when most crashes occur it is usually a fault in the aircraft. Which could consist of a failure in landing gear, engine or other mechanical components within the aircraft. This could also be a result of poor maintenance done to the aircraft that is irregularly done.
+                </div>
+            </div>
+        
+
+    </body>
+</html>
